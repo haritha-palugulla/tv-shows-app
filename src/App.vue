@@ -45,18 +45,3 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Roboto', sans-serif;;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #fff;
-  margin-top: 49px;
-    padding: 10px 25px;
-}
-body{
-	background:#000;
-}
-
-</style>

@@ -1,6 +1,6 @@
 <template>
   <div class="text-center white--text">
-    <div class="row">
+    <div class="row error-view">
         <h1 class="pt-6">{{ title }}</h1>
 		<p>{{ message }}</p>
         <router-link to="/" :title="'Shows'">
