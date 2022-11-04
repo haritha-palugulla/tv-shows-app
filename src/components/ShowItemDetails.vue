@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: 'ShowDetails',
+    name: 'ShowItemDetails',
     props: {
         showInfo: Object
     }

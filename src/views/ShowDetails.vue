@@ -1,11 +1,11 @@
 <template>
     <main>
-        <ShowDetails v-if="isMounted" :showInfo="showDetails" />
+        <ShowItemDetails v-if="isMounted" :showInfo="showDetails" />
     </main>
 </template>
 
 <script>
-import ShowDetails from '@/components/ShowDetails.vue'
+import ShowItemDetails from '@/components/ShowItemDetails.vue'
 import * as shows from "@/modules/shows";
 
 export default {
@@ -14,7 +14,7 @@ export default {
         id: String
     },
     components: {
-        ShowDetails
+        ShowItemDetails
     },
     data() {
         return {
