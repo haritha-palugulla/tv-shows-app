@@ -1,13 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
 import App from '@/App.vue'
 
-describe('Mounted App with stubs', () => {
-	const mockRouter = {
-		push: jest.fn()
-	};
-	const mockAxios = {
-		create: jest.fn()
-	}
+describe('Mounted App', () => {
 	const wrapper = shallowMount(App);
 	test('does a wrapper exist', () => {
 		expect(wrapper.exists()).toBe(true)

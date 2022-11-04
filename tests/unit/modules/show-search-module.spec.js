@@ -11,7 +11,6 @@ describe('Show search module tests', () => {
 	it("showSearch calls searchShowsApi to get the api response", async () => {
 		const searchText = 'girls';
 		let showsList = [];
-		self = this;
 		await searchShows(searchText, (response) => {showsList = response});
 		expect(searchShowsApiSpy).toHaveBeenCalled();
 		expect(typeof showsList).toBe('object');

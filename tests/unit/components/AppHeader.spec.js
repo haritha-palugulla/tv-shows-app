@@ -10,8 +10,6 @@ describe('Mounted AppHeader', () => {
 
 describe('AppHeader.vue', () => {
 	it("Renders props of given type", () => {
-		const defaultTitle = "Tv Shows";
-		const defaultUrl = "/";
 		const wrapper = shallowMount(AppHeader);
 		expect(typeof wrapper.props('title')).toBe("string");
 		expect(typeof wrapper.props('initialViewUrl')).toBe("string");

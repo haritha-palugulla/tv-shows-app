@@ -11,7 +11,6 @@ describe('Shows module tests', () => {
 	it("getShows gives list of shows sorted by rating", async () => {
 		const getShowsApiSpy = jest.spyOn(getShowsApiCollection, 'getShowsApi');
 		let showsList = [];
-		self = this;
 		await getShows((response) => {showsList = response});
 		expect(getShowsApiSpy).toHaveBeenCalled();
 		expect(typeof showsList).toBe('object');
@@ -25,7 +24,6 @@ describe('Shows module tests', () => {
 	it("getShowsGroupedByGenre gives shows grouped as list of genres", async () => {
 		const getShowsGroupedByGenreSpy = jest.spyOn(getShowsApiCollection, 'getShowsApi');
 		let genreList = [];
-		self = this;
 		await getShowsGroupedByGenre((response) => {genreList = response});
 		expect(getShowsGroupedByGenreSpy).toHaveBeenCalled();
 		expect(typeof genreList).toBe('object');
@@ -37,7 +35,6 @@ describe('Shows module tests', () => {
 		const getShowSpy = jest.spyOn(getShowsApiCollection, 'getShowApi');
 		const showId = '1';
 		let show;
-		self = this;
 		await getShow(showId, (response) => {show = response});
 		expect(getShowSpy).toHaveBeenCalledWith('1');
 		expect(typeof show).not.toBeNull();

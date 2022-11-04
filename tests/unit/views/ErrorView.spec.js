@@ -1,4 +1,4 @@
-import { mount, RouterLinkStub } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import ErrorView from '@/views/ErrorView.vue'
 
 describe('ErrorView.vue', () => {

@@ -16,7 +16,6 @@ const responseInterceptor = function(response) {
 }
 
 const errorInterceptor = error => {
-  console.log(error.response);
   router.push({
 		name: 'ErrorInPage',
 		params: {
