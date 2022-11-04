@@ -26,7 +26,7 @@ import VueHorizontal from "vue-horizontal";
 import ShowItem from '@/components/ShowItem.vue'
 
 export default {
-    name: 'ShowList',
+    name: 'ShowItems',
     props: {
         genre: {
             type: String,

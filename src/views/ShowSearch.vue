@@ -1,11 +1,11 @@
 <template>
     <main>
-        <ShowList v-if="isMounted" :shows="shows" :genre="results" />
+        <ShowItems v-if="isMounted" :shows="shows" :genre="results" />
     </main>
 </template>
 
 <script>
-import ShowList from '@/components/ShowList.vue'
+import ShowItems from '@/components/ShowItems.vue'
 import * as showSearchApi from "@/modules/show-search";
 
 export default {
@@ -17,7 +17,7 @@ export default {
         }
     },
     components: {
-        ShowList
+        ShowItems
     },
     data() {
         return {

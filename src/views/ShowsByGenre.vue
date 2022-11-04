@@ -1,19 +1,19 @@
 <template>
     <v-list ref="vertical" class="vertical" :button="false" @scroll-debounce="onScrollDebounce">
         <div v-for="genre in showsByGenre" v-bind:key="genre.genre">
-            <ShowList :genre="genre.genre" :shows="genre.shows"/>
+            <ShowItems :genre="genre.genre" :shows="genre.shows"/>
         </div>
     </v-list>
 </template>
 <script>
 import * as shows from "@/modules/shows";
-import ShowList from '@/components/ShowList.vue'
+import ShowItems from '@/components/ShowItems.vue'
 
 export default {
     name: 'ShowsByGenre',
     props: {},
     components: {
-        ShowList
+        ShowItems
     },
     data() {
         return {
