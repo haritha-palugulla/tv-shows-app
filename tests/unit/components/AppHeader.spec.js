@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import AppHeader from '@/components/AppHeader.vue'
+import AppHeader from '@/components/header/AppHeader.vue'
 
 describe('Mounted AppHeader', () => {
 	const wrapper = shallowMount(AppHeader);
